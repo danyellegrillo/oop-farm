@@ -31,8 +31,13 @@ test('Animals can be added to the farm', () => {
   const farm = new Farm()
   farm.addAnimal(new Cow(100))
 })
-// test('Animals will be taken into account for calculateIncome', () => {
-//   const farm = new Farm()
-//   farm.addAnimal(new Cow(100))
-//   expect(farm.calculateIncome()).not.toBe(0)
-// })
+test('Animals will be taken into account for calculateIncome', () => {
+  const farm = new Farm()
+  farm.addAnimal(new Cow(100))
+  expect(farm.calculateIncome()).not.toBe(0)
+})
+test('Animals will be taken into account for calculateIncome', () => {
+  const farm = new Farm()
+  farm.addAnimal(new Cow(100))
+  expect(farm.calculateIncome()).not.toBe(0)
+})
