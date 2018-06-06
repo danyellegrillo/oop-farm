@@ -8,7 +8,7 @@ class Farm {
   addCrop(crop) {
     this.crops.push(crop)
   }
-  calculateIncome(crop) {
+  calculateIncome() {
    let crops = this.crops
     .map(crop => crop.getYieldInEuros())
     .reduce((a,b) => a + b, 0)
