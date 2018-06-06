@@ -8,7 +8,7 @@ class Farm {
   addCrop(crop) {
     this.crops.push(crop)
   }
-  calculateIncome() {
+  calculateIncome(crop) {
     return this.crops
     .map(crop => crop.getYieldInEuros())
     .reduce((a,b) => a + b, 0)
@@ -16,5 +16,6 @@ class Farm {
   addAnimal(animal){
     this.animals.push(animal)
   }
+
 }
 module.exports.Farm = Farm
